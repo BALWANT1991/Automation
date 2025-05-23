@@ -1,0 +1,26 @@
+// Parent class (superclass)
+class ParentClass {
+    
+    private void privateMethod() { 
+        System.out.println("privateMethod");
+    }
+
+    public void publicMethod() {
+        System.out.println("publicMethod");
+    }
+}
+
+// Child class (subclass)
+class ChildClass extends ParentClass {
+    
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ParentClass parentObj = new ParentClass(10);
+        parentObj.publicMethod();  // Access public method of ParentClass
+
+        ChildClass childObj = new ChildClass(20);
+        childObj.accessPrivateMembers();  // Attempt to access private members of ParentClass in ChildClass
+    }
+}

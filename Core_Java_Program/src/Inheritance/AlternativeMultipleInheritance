@@ -1,0 +1,26 @@
+class ParentClass { // Parent class (superclass)
+
+  public void parentMethod() {
+    System.out.println("ParentClass method");
+  }
+}
+
+interface Interface1 { // Interface 1
+  void method1();
+}
+
+interface Interface2 { // Interface 2
+  void method2();
+}
+
+// Child class (subclass)
+class ChildClass extends ParentClass implements Interface1, Interface2 {
+
+  public void method1() {
+    System.out.println("Implementation of method1");
+  }
+
+  public void method2() {
+    System.out.println("Implementation of method2");
+  }
+}

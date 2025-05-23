@@ -11,6 +11,7 @@ System.out.println(alphabets);
    String numbers = str.replaceAll("[a=z a-z %$@]","");	
 	System.out.println(numbers);
     System.out.println("total num:"+numbers.length());
+    
  }
 	
 }

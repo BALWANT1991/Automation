@@ -10,8 +10,10 @@ public class Assertion_handle {
 public static void main(String[] args) {
 	System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Automation\\Chrome_Driver\\Chrome_Driver_123\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
+	
 	driver.get("http://spicejet.com"); //URL in the browser
 	driver.switchTo().alert().accept();
+	
 	Assert.assertFalse(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 	//Assert.assertFalse(true);System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 	driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();

@@ -16,7 +16,7 @@ public class Sample {
     System.out.println(x.length());
     
     for(int i=x.length()-1;i>=0;i--) {
-    	System.out.println(x.charAt(i));
+    	System.out.print(x.charAt(i));
     }
 	}
 }

@@ -1,0 +1,18 @@
+class ParentClass1 {
+    void method1() {
+        System.out.println("method1");
+    }
+}
+
+class ParentClass2 {
+    void method2() {
+        System.out.println("method2");
+    }
+}
+
+// Attempt at multiple inheritance 
+// (which is not allowed in Java)
+class ChildClass extends ParentClass1, ParentClass2 { 
+
+    
+}

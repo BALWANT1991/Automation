@@ -1,0 +1,58 @@
+// Single Inheritance
+class Parent1 {
+
+  public void display() {
+    System.out.println("Parent1");
+  }
+}
+
+class Child1 extends Parent1 {
+
+  public void show() {
+    System.out.println("Child1");
+  }
+}
+
+// Multilevel Inheritance
+class Parent1 {
+
+  public void display() {
+    System.out.println("Parent1");
+  }
+}
+
+class Child1 extends Parent1 {
+
+  public void show() {
+    System.out.println("Child1");
+  }
+}
+
+class Child2 extends Child1 {
+
+  public void print() {
+    System.out.println("Child2");
+  }
+}
+
+// Hierarchical Inheritance
+class Parent1 {
+
+  public void display() {
+    System.out.println("Parent1");
+  }
+}
+
+class Child1 extends Parent1 {
+
+  public void show() {
+    System.out.println("Child1");
+  }
+}
+
+class Child2 extends Parent1 {
+
+  public void print() {
+    System.out.println("Child2");
+  }
+}
